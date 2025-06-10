@@ -6,11 +6,6 @@ A machine learning project developed as part of the course **Introduction to Dat
 
 Flight ticket prices are highly dynamic, fluctuating based on numerous factors including demand, seasonality, and airline policies. Our objective is to build a predictive system using **machine learning** techniques, specifically **XGBoost**, to accurately forecast flight fares and assist users in booking tickets at the best possible time.
 
-## 👨‍💻 Team Members
-
-- **Vimal Kumar Verma** (M24MAC015)  
-- **Amit Kumar Verma** (M24MAC016)  
-- **Shashank Mishra** (M24MAC011)  
 
 ## 🎯 Objectives
 
@@ -68,24 +63,3 @@ Utilized **Optuna** for automatic search and tuning of model parameters to impro
 - Training and testing errors compared to avoid overfitting.
 - Predictions generalized well to new unseen data.
 
-## 🔮 Sample Prediction
-
-```python
-new_data = pd.DataFrame({
-    "Airline": ["IndiGo"],
-    "Source": ["Mumbai"],
-    "Destination": ["New Delhi"],
-    "day": [10],
-    "month": [11],
-    "year": [2024],
-    "Total_Stops": [0],
-    "Dep_hr": [5.0],
-    "Dep_Minz": [0.0],
-    "Arrival_hr": [7.0],
-    "Arrival_minz": [0],
-    "Total_Duration_hrs": [2.04],
-    "Additional_Info": ["No info"]
-})
-
-predicted_price = pipeline_1.predict(new_data)
-print(f"Predicted Price : ₹{predicted_price[0]:.2f}")
